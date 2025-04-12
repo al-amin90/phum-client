@@ -26,15 +26,26 @@
   },
 ];
 
-const newArr = adminPaths2.reduce((acc, item) => {
-    if(item.path && item.element){
-        acc.push({
-            path: item.path,
-            element: item.element
-        })
-    }
+// const newArr = adminPaths2.reduce((acc, item) => {
+//     if(item.name && item.path){
+//         acc.push({
+//             key: item.name,
+//             label: 'navlivk'
+//         })
+//     }
 
-    return acc
-}, [])
+//     if(item.children){
+//         acc.push({
+//             key: item.name,
+//             label: item.name,
+//             children: item.children.map(child => ({
+//                 key: child.name,
+//                 label: 'navlink'
+//             }))
+//         })
+//     }
+
+//     return acc
+// }, [])
 
 console.log('final', newArr);
