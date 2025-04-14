@@ -14,7 +14,7 @@ export const router = createBrowserRouter([
     element: <App></App>,
   },
   {
-    path: "/admin",
+    path: "/superAdmin",
     element: <App></App>,
     children: routeGenerator(adminPaths)
   },
